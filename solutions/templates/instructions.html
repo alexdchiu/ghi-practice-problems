@@ -1,0 +1,60 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'shell.css' %}">
+    <title>Instructions</title>
+  </head>
+  <body>
+    <main id="main-instructions">
+      <h1>GHI Problems</h1>
+      <p>
+        The abbreviation <b>GHI</b> stands for <i>Graphical Human Interface</i>. This
+        is a newer abbreviation than UI which stands for <i>User Interface</i>.
+        We use the more specific GHI abbreviation because humans are the ones
+        that look at and interact with HTML. There are other types of interfaces
+        for machines, and those are APIs, or <i>application programming interfaces</i>.
+      </p>
+      <p>
+        This packet of problems allows you to practice and learn
+        HTML tags, Django templates, and contexts passed to those
+        templates.
+      </p>
+      <p>
+        All tests for these problems run in the browser. You <b>do not</b>
+        have to run <code>python manage.py test</code> to see the results.
+      </p>
+      <p>
+        The files that you will change are in the <b>problems/</b> Django
+        app. You will be asked to modify:
+      </p>
+      <ul>
+        <li>
+          Zero or more HTML files in the <b>problems/templates/</b>
+          directory
+        </li>
+        <li>
+          Zero or more Python files in the <b>problems/views/</b>
+          directory
+        </li>
+        <li>
+          Zero or more CSS files in the <b>problems/static/</b>
+          directory
+        </li>
+      </ul>
+      <p>
+        You will likely find the
+        <a target="_blank" href="https://docs.djangoproject.com/en/4.0/ref/templates/builtins/">Built-in template tags and filters</a>
+        documentation a nice reference for these exercises.
+      </p>
+      <p>
+        Let's get started with
+        <a href="{% url 'shell_detail' 1 %}">Problem #1</a>!
+      </p>
+    </main>
+  </body>
+</html>
