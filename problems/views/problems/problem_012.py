@@ -3,4 +3,4 @@ from problems.views.problems.helpers import HasLoggedInUserMixin
 
 
 class Problem012(HasLoggedInUserMixin, TemplateView):
-    template_name = "problems/problem_012/view.html"
+    template_name = "problems/problem_012.html"

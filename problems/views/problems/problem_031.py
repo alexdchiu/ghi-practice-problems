@@ -4,4 +4,4 @@ from problems.views.problems.helpers import HasPeopleDataMixin
 
 
 class Problem031(HasPeopleDataMixin, TemplateView):
-    template_name = "problems/problem_031/view.html"
+    template_name = "problems/problem_031.html"

@@ -28,10 +28,12 @@
       {% endif %}
     </div>
     <div class="right-nav">
-      {% if number < 81 %}
+      {% if number < 41 %}
         <a href="{% url 'shell_detail' next %}{% if prefix %}?{{ prefix }}{% endif %}">
           Problem {{ next }}
         </a>
+      {% else %}
+        ALL DONE!
       {% endif %}
     </div>
   </header>

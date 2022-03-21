@@ -3,4 +3,4 @@ from solutions.views.solutions.helpers import HasAnonymousUserMixin
 
 
 class Solution013(HasAnonymousUserMixin, TemplateView):
-    template_name = "solutions/solution_012/view.html"
+    template_name = "solutions/solution_012.html"

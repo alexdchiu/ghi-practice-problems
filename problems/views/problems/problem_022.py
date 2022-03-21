@@ -2,7 +2,7 @@ from django.views.generic.base import TemplateView
 
 
 class Problem022(TemplateView):
-    template_name = "problems/problem_022/view.html"
+    template_name = "problems/problem_022.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
