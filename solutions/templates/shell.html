@@ -40,9 +40,9 @@
   <main id="shell">
     {% include instructions %}
     {% if prefix == "solution" %}
-      <iframe src="{% url 'solution_detail' number %}">
+      <iframe src="{% url 'solution_detail' number %}?buster={{ buster }}">
     {% else %}
-      <iframe src="{% url 'problem_detail' number %}">
+      <iframe src="{% url 'problem_detail' number %}?buster={{ buster }}">
     {% endif %}
   </main>
 </body>

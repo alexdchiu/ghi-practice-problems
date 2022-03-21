@@ -2,6 +2,7 @@ from copy import copy
 from django.shortcuts import render
 from importlib import import_module
 from django.templatetags.static import static
+import random
 
 
 injected_files = [
@@ -56,6 +57,7 @@ def show_shell(request, pk, number):
         "instructions": f"instructions/problem_{number}.html",
         "padded_number": number,
         "prefix": "solution" if "solution" in request.GET else None,
+        "buster": random.randint(0, 1000000),
     }
     return render(request, "shell.html", context)
 
