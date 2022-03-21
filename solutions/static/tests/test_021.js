@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', async () => {
   describe('Your HTML template', () => {
     it('should have four list items', () => {
       document
-        .querySelector(':not(#mocha) > li:nth-child(1)')
+        .querySelectorAll('main > ul > li')
         .should.have.length(4);
     });
     it('should apply "grey" class to "Kim"', () => {
