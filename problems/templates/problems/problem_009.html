@@ -6,7 +6,7 @@
   of using the ul tag, use the ol tag. The rest
   should remain the same.
 -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Problem 009</title>
@@ -14,7 +14,11 @@
   <body>
     <main>
       <!-- Build the ORDERED list of names -->
-
+      <ol>
+        {% for name in names %}
+        <li>{{name}}</li>
+        {% endfor %}
+      </ol>
     </main>
   </body>
 </html>

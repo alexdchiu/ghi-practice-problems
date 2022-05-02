@@ -6,7 +6,7 @@
   li (list item) tag using a Django for loop
   for each name in names.
 -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Problem 005</title>
@@ -15,10 +15,10 @@
     <main>
       <ul>
         <!-- for each name in names -->
-
-          <li>{{ name }}</li>
+        {% for name in names %}
+        <li>{{ name }}</li>
         <!-- End for -->
-
+        {% endfor %}
       </ul>
     </main>
   </body>

@@ -6,7 +6,7 @@
   if the name has a length greater than
   3. Follow the pseudocode for help.
 -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Problem 010</title>
@@ -19,14 +19,14 @@
       -->
       <ol>
         <!-- for each name in names -->
-
-          <!-- if name|length > 3 -->
-
-            <li>{{ name }}</li>
-          <!-- end if -->
-
+        {% for name in names %}
+        <!-- if name|length > 3 -->
+        {% if name|length > 3 %}
+        <li>{{ name }}</li>
+        <!-- end if -->
+        {% endif %}
         <!-- end for -->
-
+        {% endfor %}
       </ol>
     </main>
   </body>

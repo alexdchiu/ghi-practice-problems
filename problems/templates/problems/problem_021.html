@@ -19,7 +19,11 @@
       item where each odd item is grey and the
       others aren't.
     -->
-
+    <ul>
+      {% for name in names %}
+      <li class="{% cycle "grey" "class-2" %}">{{ name }}</li>
+      {% endfor %}
+    </ul>
   </main>
 </body>
 </html>

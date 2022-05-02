@@ -8,7 +8,7 @@
   address in the indicated paragraph tag. Otherwise,
   have it show the "Not logged in" message.
 -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Problem 012</title>
@@ -16,13 +16,13 @@
   <body>
     <main>
       <!-- if the user is authenticated -->
-
-        <p class="email">{{ user.email|default_if_none:"no email" }}</p>
+      {% if user.is_authenticated %}
+      <p class="email">{{ user.email|default_if_none:"no email" }}</p>
       <!-- otherwise -->
-
-        <p class="message">Not logged in</p>
+      {% else %}
+      <p class="message">Not logged in</p>
       <!-- end if -->
-
+      {% endif %}
     </main>
   </body>
 </html>

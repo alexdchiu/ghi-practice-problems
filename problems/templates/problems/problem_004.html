@@ -6,7 +6,7 @@
   p tag in a Django if statement to only show
   the p tag if show_information is True
 -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Problem 004</title>
@@ -14,10 +14,10 @@
   <body>
     <main>
       <!-- If show_information is True -->
-
-        <p><code>show_information</code> is true</p>
+      {% if show_information %}
+      <p><code>show_information</code> is true</p>
       <!-- End if -->
-
+      {% endif %}
     </main>
   </body>
 </html>

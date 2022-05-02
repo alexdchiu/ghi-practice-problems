@@ -21,6 +21,23 @@
       This context has a list of Person objects stored
       in the "people" key.
     -->
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Pronouns</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for person in people %}
+        <tr>
+          <td>{{person.name}}</td>
+          <td>{{person.age}}</td>
+          <td>{{person.pronouns}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
   </main>
 </body>
 </html>

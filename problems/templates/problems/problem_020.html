@@ -18,7 +18,7 @@
           Use cycle where indicated in the following
           from memory
         -->
-        <li class="use cycle here">{{ name }}</li>
+        <li class="{% cycle "grey" "class-2" %}">{{ name }}</li>
 
       {% endfor %}
     </ul>

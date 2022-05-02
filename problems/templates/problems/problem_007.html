@@ -5,7 +5,7 @@
   Complete the pseudocode below to create all
   of the pieces of the unordered list of names.
 -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Problem 007</title>
@@ -13,15 +13,15 @@
   <body>
     <main>
       <!-- Add the open ul tag, here -->
-
+      <ul>
         <!-- for each name in names -->
-
-          <!-- li tag with {{name}} as content -->
-
+        {% for name in names %}
+        <!-- li tag with {{name}} as content -->
+        <li>{{ name }}</li>
         <!-- End for -->
-
-      <!-- Add the close ul tag, here -->
-
+        {% endfor %}
+        <!-- Add the close ul tag, here -->
+      </ul>
     </main>
   </body>
 </html>

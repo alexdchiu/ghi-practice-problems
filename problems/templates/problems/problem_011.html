@@ -5,7 +5,7 @@
   Only output the name in the unordered list
   if the name contains the letter "i".
 -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Problem 011</title>
@@ -18,14 +18,14 @@
       -->
       <ul>
         <!-- for each name in names -->
-
-          <!-- if "i" in name -->
-
-            <li>{{ name }}</li>
-          <!-- end if -->
-
+        {% for name in names %}
+        <!-- if "i" in name -->
+        {% if "i" in name %}
+        <li>{{ name }}</li>
+        <!-- end if -->
+        {% endif %}
         <!-- end for -->
-
+        {% endfor %}
       </ul>
     </main>
   </body>

@@ -5,3 +5,6 @@
 */
 
 /* This time, do it from memory. */
+.error {
+  color: red;
+}

@@ -8,7 +8,7 @@
   This time, you need to add the loop, and
   the li tag with its contents in the loop.
 -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Problem 006</title>
@@ -17,11 +17,11 @@
     <main>
       <ul>
         <!-- for each name in names -->
-
-          <!-- li tag with {{name}} as content -->
-
+        {% for name in names %}
+        <!-- li tag with {{name}} as content -->
+        <li>{{name}}</li>
         <!-- End for -->
-
+        {% endfor %}
       </ul>
     </main>
   </body>
